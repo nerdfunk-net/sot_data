@@ -1,0 +1,85 @@
+query ($device_id: ID!) {
+  device(id: $device_id) {
+    config_context
+    hostname: name
+    serial
+    primary_ip4 {
+      address
+    }
+    tags {
+      name
+      slug
+    }
+    device_role {
+      name
+    }
+    platform {
+      name
+      slug
+      manufacturer {
+        name
+      }
+      napalm_driver
+    }
+    site {
+      name
+      slug
+      vlans {
+        name
+        vid
+      }
+      vlan_groups {
+        id
+      }
+    }
+    interfaces {
+      name
+      description
+      enabled
+      mac_address
+      type
+      mode
+      ip_addresses {
+        address
+        role
+        tags {
+          slug
+        }
+      }
+      connected_circuit_termination {
+        circuit {
+          cid
+          commit_rate
+          provider {
+            name
+          }
+        }
+      }
+      tagged_vlans {
+        name
+      }
+      untagged_vlan {
+        name
+        vid
+      }
+      cable {
+        termination_a_type
+        status {
+          name
+        }
+        color
+      }
+      tags {
+        id
+        slug
+      }
+      lag {
+        name
+        enabled
+      }
+      member_interfaces {
+        name
+      }
+    }
+  }
+}

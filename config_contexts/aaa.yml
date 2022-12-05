@@ -1,0 +1,14 @@
+---
+_metadata:
+  name: aaa
+  weight: 1000
+  description: AAA New Model
+  is_active: true
+aaa:
+  tacgroup: "tacacsgrp"
+  server: 1.1.1.1
+  source: Loopback100
+  passwordprompt: "Passwort:"
+  usernameprompt: "Benutzer-Name:"
+
+  

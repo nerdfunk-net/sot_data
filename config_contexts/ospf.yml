@@ -1,0 +1,16 @@
+---
+_metadata:
+  name: ospf
+  weight: 1000
+  description: OSPF Config
+  is_active: true
+ospf:
+  pid: 100
+  rid: Loopback100
+  logadjchanges: detail
+  autocost: 10000
+  nsf: ietf
+  timers:
+    - throttle spf 50 200 10000
+    - throttle lsa 10 100 10000
+    - lsa arrival 10000

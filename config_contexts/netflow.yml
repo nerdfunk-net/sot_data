@@ -1,0 +1,51 @@
+---
+_metadata:
+  is_active: true
+  name: netflow
+  weight: 1000
+  description: Netflow
+netflow:
+  flowrecord:
+    - name: FLOW-REC1
+      description: desc
+      match:
+        - ipv4 tos
+        - ipv4 protocol
+        - ipv4 source address
+        - ipv4 destination address
+        - transport ource-port
+        - transport destination-port
+        - interface input
+        - flow direction
+      collect:
+        - transport tcp flags
+        - interface output
+        - counter bytes long
+        - counter packets long
+  flowexporter:
+    - name: FLOW-EXP
+      type: input
+      description: desc
+      destination: 1.1.1.1
+      source: Loopback100
+      transport: udp 9996
+      config:
+        - template data timeout 60
+        - option sampler-table timeout 60
+  flowmonitor:
+    - name: FLOW-MON-OUT
+      type: output
+      description: description
+      exporter: FLOW-EXP
+      record: FLOW-REC
+      config:
+        - cache timeout inactive 5
+        - cache timeout active 5
+    - name: FLOW-MON-INPUT
+      type: input
+      description: description
+      exporter: FLOW-EXP
+      record: FLOW-REC
+      config:
+        - cache timeout inactive 5
+        - cache timeout active 5

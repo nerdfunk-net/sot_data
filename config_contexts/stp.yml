@@ -1,0 +1,14 @@
+---
+_metadata:
+  name: stp
+  weight: 1000
+  description: Spanning Tree
+  is_active: true
+stp:
+  default:
+    mode: rapid-pvst
+    bpduguard: true
+    bpdufilter: true
+  additional:
+    - spanning-tree extend system-id
+    - spanning-tree uplinkfast

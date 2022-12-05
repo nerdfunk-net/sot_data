@@ -1,0 +1,21 @@
+{
+  "_metadata": {
+    "name": "ntp",
+    "description": "Schema for defining first names."
+  },
+  "data_schema": {
+    "type": "object",
+    "properties": {
+        "ntp-servers": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {
+                "type": "string",
+                "format": "ipv4"
+            }
+        }
+    },
+    "additionalProperties": false
+  }
+}
