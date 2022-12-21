@@ -6,7 +6,7 @@ prefixe:
     platform: ios
     site: default_site
     role: default_role
-    devicetype: default_device
+    devicetype: default_type
   10.0.0.0/8:
     site: stillnouse
   10.10.0.0/24:
@@ -15,5 +15,5 @@ prefixe:
     role: access_switch
     devicetype: access_switch
   192.168.0.0/24:
-    site: my192site
-    manufacturer: arista
+    site: default_site
+    manufacturer: cisco
