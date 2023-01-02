@@ -1,0 +1,4 @@
+---
+{services: [service timestamps debug datetime msec, service timestamps log datetime
+      msec, service password-encryption, service compress-config], stp: [spanning-tree
+      mode rapid-pvst, spanning-tree extend system-id]}
