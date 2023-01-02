@@ -1,7 +1,2 @@
 ---
-additional:
-  config: extra config for device
-ntp:
-  ip: 1.1.1.4
-test:
-  ip: test
+ntp: 1.2.3.4
