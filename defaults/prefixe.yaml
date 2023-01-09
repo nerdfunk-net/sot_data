@@ -6,7 +6,7 @@ prefixe:
     platform: ios
     site: default_site
     role: default_role
-    devicetype: default_type
+    device_type: default_type
   10.0.0.0/8:
     site: stillnouse
   10.37.0.0/8:
@@ -15,7 +15,7 @@ prefixe:
     platform: ios
     site: default_site
     role: default_role
-    devicetype: default_type
+    device_type: default_type
   192.168.0.0/24:
     site: default_site
     manufacturer: cisco
