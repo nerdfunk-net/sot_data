@@ -1,0 +1,6 @@
+---
+ospf_routing:
+  config_a:
+    - router ospf 100
+    - passive-interface default
+    - no passive-interface
