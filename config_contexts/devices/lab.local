@@ -1,2 +1,8 @@
 ---
-ntp: 1.2.3.4
+ospf:
+- no passive-interface GigabitEthernet0/1
+- network 192.168.0.1 0.0.0.0 area 0
+services:
+- service timestamps debug datetime msec
+- service timestamps log datetime msec
+stp: []
