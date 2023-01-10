@@ -8,6 +8,7 @@ ospf:
   pid: 100
   rid: Loopback100
   logadjchanges: detail
+  passive-interface: default
   autocost: 10000
   nsf: ietf
   timers:
