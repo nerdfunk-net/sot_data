@@ -1,6 +1,12 @@
 ---
 ospf_routing:
+  # name of teh config
   config_a:
-    - router ospf 100
-    - passive-interface default
-    - no passive-interface
+    # metadata like weight, site
+    metadata:
+      - weight: 100
+    # config lines
+    config:
+      - router ospf 100
+      - passive-interface default
+      - no passive-interface
