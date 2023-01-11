@@ -7,3 +7,4 @@ ospf:
   - area: '0'
     mask: 0.0.0.0
     net: 192.168.0.1
+  passive-interface: GigabitEthernet0/1
