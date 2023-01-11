@@ -1,2 +1,10 @@
 ---
-{}
+lab.local: !!python/object/apply:collections.defaultdict
+  args:
+  - &id001 !!python/name:onboarding.config_context.inf_defaultdict ''
+  dictitems:
+    ospf: !!python/object/apply:collections.defaultdict
+      args:
+      - *id001
+      dictitems:
+        passive-interface: null
