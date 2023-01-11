@@ -1,16 +1,8 @@
 ---
-lab.local: !!python/object/apply:collections.defaultdict
-  args:
-  - &id001 !!python/name:onboarding.config_context.inf_defaultdict ''
-  dictitems:
-    ospf: !!python/object/apply:collections.defaultdict
-      args:
-      - *id001
-      dictitems:
-        network:
-        - area: '1'
-          mask: 0.255.255.255
-          net: 10.0.0.0
-        - area: '0'
-          mask: 0.0.0.0
-          net: 192.168.0.1
+network:
+- area: '1'
+  mask: 0.255.255.255
+  net: 10.0.0.0
+- area: '0'
+  mask: 0.0.0.0
+  net: 192.168.0.1
