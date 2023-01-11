@@ -5,7 +5,7 @@ _metadata:
   description: OSPF Config
   is_active: true
 ospf:
-  pid: 100
+  pid: 101
   rid: Loopback100
   logadjchanges: detail
   passive-interface: default
