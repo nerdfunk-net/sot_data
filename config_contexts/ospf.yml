@@ -7,7 +7,7 @@ _metadata:
 ospf:
   pid: 101
   rid: Loopback100
-  logadjchanges: detail
+  log-adjacency-changes: detail
   passive-interface: default
   autocost: 10000
   nsf: ietf
