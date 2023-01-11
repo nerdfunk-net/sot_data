@@ -8,3 +8,4 @@ lab.local: !!python/object/apply:collections.defaultdict
       - *id001
       dictitems:
         passive-interface: GigabitEthernet0/1
+        pid: '100'
