@@ -1,8 +1,9 @@
 ---
-network:
-- area: '1'
-  mask: 0.255.255.255
-  net: 10.0.0.0
-- area: '0'
-  mask: 0.0.0.0
-  net: 192.168.0.1
+ospf:
+  network:
+  - area: '1'
+    mask: 0.255.255.255
+    net: 10.0.0.0
+  - area: '0'
+    mask: 0.0.0.0
+    net: 192.168.0.1
