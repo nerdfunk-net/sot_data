@@ -9,7 +9,7 @@ ospf:
   rid: Loopback100
   log-adjacency-changes: detail
   passive-interface: default
-  autocost: 10000
+  auto-cost: 10000
   nsf: ietf
   timers:
     - throttle spf 50 200 10000
