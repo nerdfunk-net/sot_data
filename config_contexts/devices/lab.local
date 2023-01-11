@@ -7,5 +7,4 @@ lab.local: !!python/object/apply:collections.defaultdict
       args:
       - *id001
       dictitems:
-        passive-interface: null
         pid: '100'
