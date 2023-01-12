@@ -7,8 +7,12 @@ manufacturers:
     slug: arista
     description: Arista
 platforms:
-    - name: ios
-      slug: ios
-      description: IOS
-      manufacturer: cisco
-      napalm_driver: ios
+   - name: ios
+     slug: ios
+     description: IOS
+     manufacturer: cisco
+     napalm_driver: ios
+devicetype:
+  - model: WS-C3850-48T
+    slug: ws-c3850-48t
+    manufacturer: cisco

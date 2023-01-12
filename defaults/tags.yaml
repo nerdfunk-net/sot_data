@@ -1,0 +1,18 @@
+---
+device:
+  - name: ospf
+    slug: ospf
+    description: "OSPF active on Device"
+interface:
+  - name: ospf
+    slug: ospf
+    description: "OSPF active on Interface"
+  - name: hsrp
+    slug: hsrp
+    description: "HSRP configured on Interface"
+  - name: dhcp
+    slug: dhcp
+    description: "DHCP configured on Interface"
+  - name: portfast
+    slug: portfast
+    description: "Spanningtree portfast configured on Interface"
